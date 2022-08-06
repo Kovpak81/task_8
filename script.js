@@ -20,15 +20,12 @@ function maxi(val) {
     maxValue = parseInt(val);
     if (maxValue > 1000) {
         maxValue = 999;
-    // } else if (maxValue = 999) {
-    //     maxValue == "один"
     }
     document.querySelector('#maxNum').textContent = maxValue;
     return maxValue;
 }
 
 let answerNumber;
-let answerNumberText;
 let orderNumber = 1;
 let gameRun;
 
@@ -101,19 +98,7 @@ document.getElementById('btnLess').addEventListener('click', function () {
             answerNumber  = Math.floor((minValue + maxValue) / 2);
             orderNumber++;
             orderNumberField.innerText = orderNumber; 
-     
-        // function answerNumberString () {
-        //     if (answerNumber <= 20) {
-        //     switch (answerNumber){
-        //         case '1': answerNumberText = "один";
-        //         break;
-        //     }
-        //     return answerNumberText;
-        //     }
-        // }
-
-        // answerNumberString ();
-
+             
 // делаю массив для случайного выбора предложения при нажатии кнопки меньше
             let answerRandoms = [
                 [`Возможно это число ${answerNumber }?`],
